@@ -1,0 +1,133 @@
+:root{
+    --main-background-color: hsl(216, 54%, 11%);
+    --card--background-color:hsl(216, 50%, 16%);
+    --first-color: hsl(215, 32%, 27%);
+    --text-color-alt: hsl(0,0%,100%);
+    --hover-color: hsl(178, 100%, 50%);
+    --text-color: hsl(215, 51%, 70%);  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: var(--main-background-color);
+    font-family:outfit, lato;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-bottom: 3%; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card--background-color);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 32px 42px  rgb(3, 15, 34);
+}
+
+.container {
+    max-width: 368px;
+    align-self: center;
+    margin: 2% auto 0 auto;
+}
+
+.eye{
+    margin-top: 50%;
+    margin-left: 43%;
+    visibility: hidden;
+}
+
+.card-image {
+    align-self: center;
+    height: 300px;
+    width: 285px;
+    background-image:url(images/image-equilibrium.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.card-image:hover{
+    background-image:linear-gradient(rgba(0, 255, 247, 0.611),rgba(0, 255, 247, 0.611)),url(images/image-equilibrium.jpg);
+    transition: 0.5s ease;
+}
+
+.card-image:hover .eye{ 
+    visibility: visible;
+}
+
+.content{
+    align-self: center;
+}
+.content-details{
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid var(--first-color);
+}
+.crypto{
+    color: var(--hover-color);
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.date{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+.content-header{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.content-header a{
+    text-decoration: none;
+    color: var(--text-color-alt);
+}
+.content-header a:hover{
+    color: var(--hover-color);
+}
+.content-description{
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 300;
+}
+.content-creator{
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+.content-creator img{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0;
+}
+.name a{
+    text-decoration: none;
+    color: var(--text-color-alt);
+}
+.name a:hover{
+    color: var(--hover-color);
+}
